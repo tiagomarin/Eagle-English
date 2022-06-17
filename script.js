@@ -1,6 +1,6 @@
+//EXPERIMENTAL
 //functions
 
-//EXPERIMENTAL
 //generate a random number between 2 integers inclusive
 // function random(min, max) {
 //   min = Math.ceil(min);
@@ -8,7 +8,8 @@
 //   return Math.floor(Math.random() * (max - min + 1) + min);
 // }
 
-// EXPERIMENTAL FEATURES SHUFFLE
+// create featured teachers database by SHUFFLING through the teachersDatabase
+// tried with random and it repeated
 
 // let featTeachersDatabase = [];
 // // let featTeacher = teachersDatabase[random(0, teachersDatabase.length - 1)];
@@ -16,6 +17,12 @@
 //   featTeachersDatabase.push(teachersDatabase[random(0, teachersDatabase.length - 1)]);
 //   console.log(featTeachersDatabase);
 // }
+
+// data base could increase overtime:
+// ['image.png', 'name7', 'higlights7', 'description7'],
+// ['image.png', 'name8', 'higlights8', 'description8'],
+// ['image.png', 'name9', 'higlights9', 'description9']
+// ...
 
 // BEGINNING OF CODE
 
@@ -27,10 +34,9 @@ const teachersDatabase = [
   ['image.png', 'name4', 'higlights4', 'description4'],
   ['image.png', 'name5', 'higlights5', 'description5'],
   ['image.png', 'name6', 'higlights6', 'description6'],
-  // ['image.png', 'name7', 'higlights7', 'description7'],
-  // ['image.png', 'name8', 'higlights8', 'description8'],
-  /* ['image.png', 'name9', 'higlights9', 'description9']*/
 ];
+
+
 
 let featTeachers = document.getElementById('feat-teachers');
 
