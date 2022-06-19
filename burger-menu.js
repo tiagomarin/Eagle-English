@@ -1,11 +1,21 @@
-let openMenuBtn = document.querySelector('.menu-btn');
-let clsMenuBtn = document.querySelector('.close-menu-btn');
-let mobMenu = document.querySelector('.mobile-menu');
+const openMenuBtn = document.querySelector('.menu-btn');
+const clsMenuBtn = document.querySelector('.close-menu-btn');
+const mobMenu = document.querySelector('.mobile-menu');
 
-openMenuBtn.addEventListener('click', function () {
-  mobMenu.setAttribute('id', 'display-block')
+openMenuBtn.addEventListener('click', function() {
+  mobMenu.classList.add('display-block');
+});
+clsMenuBtn.addEventListener('click', function() {
+  mobMenu.classList.remove('display-block');
 });
 
-clsMenuBtn.addEventListener('click', function () {
-  mobMenu.setAttribute('id', 'display-block')
-});
+// function openModal(element) {
+//   element.classList.add('display-block');
+// };
+
+// function clsModal(element) {
+//   element.classList.add('display-block');
+// };
+
+// openMenuBtn.addEventListener('click', openModal(mobMenu));
+// clsMenuBtn.addEventListener('click', clsModal(mobMenu));
