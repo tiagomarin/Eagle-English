@@ -1,14 +1,11 @@
 body {
   background-color: blanchedalmond;
-
-  /*add with js for mobile menu
-  overflow is to stop scroll*/
-
-  /* overflow: hidden;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); */
-
 }
 
+.modal-on{
+  overflow: hidden;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
 /* .br {
   display: block;
   margin-bottom: 0em;
