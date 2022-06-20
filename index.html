@@ -15,8 +15,8 @@
 <body>
 
   <header>
-    <nav>
-
+    <!-- MOBILE NAV BAR -->
+    <nav id="mobile-nav">
       <button class="menu-btn"><i class="fa-solid fa-bars"></i></button>
 
       <ul class="mobile-menu">
@@ -37,14 +37,15 @@
         <li><a href="">
             <i class="fa-brands fa-instagram">&nbsp;&nbsp;&nbsp; Instagram</i>
           </a></li>
+        <li id="logo">
+          <img src="" alt="">
+          LOGO
+        </li>
       </ul>
+
     </nav>
-
-    <a id="logo" href="">
-      <img src="" alt="">
-      LOGO
-    </a>
-
+    <!-- -------- -->
+    <!-- DESKTOP NAV BAR -->
     <div id="pre-nav">
       <ul>
         <li><a href="">
@@ -59,7 +60,10 @@
       </ul>
     </div>
     <div id="desktop-nav">
-      <div></div>
+      <a id="logo" href="">
+        <img src="" alt="">
+        LOGO
+      </a>
       <ul>
         <li><a href="/home">About</a></li>
         <li><a href="/products">Methodology</a></li>
@@ -71,6 +75,7 @@
       </ul>
     </div>
   </header>
+
   <main>
     <!-- INTRO -->
     <section id="intro">
@@ -82,49 +87,33 @@
       <p>"insert a quotation blablablabla" - author</p>
     </section>
 
-    <!-- COURSE FEATURES -->
-    <section id="course-features">
-      <h2></h2>
-      <ul id="feat-grid">
-        <li>
-          <p class="feat-icon"></p>
-          <h3>Custom Paths</h3>
-          <p></p>
-        </li>
-        <li>
-          <p class="feat-icon"></p>
-          <h3>Master Classes</h3>
-          <p> Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur.</p>
-        </li>
-        <li>
-          <p class="feat-icon"></p>
-          <h3>Community Support</h3>
-          <p> Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur.</p>
-        </li>
-        <li>
-          <p class="feat-icon"></p>
-          <h3>Gamified Learning</h3>
-          <p> Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur.</p>
-        </li>
-        <li>
-          <p class="feat-icon"></p>
-          <h3>Advanced Evaluation </h3>
-          <p> Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur.</p>
-        </li>
-      </ul>
-      <a href="">SEE THE ALL COURSE FEATURES</a>
-    </section>
+
 
     <!-- FEATURED TEACHERS -->
     <section id="feat-teachers">
-      <!-- <script src="script.js"></script> -->
+      <script src="script.js"></script>
     </section>
 
     <!-- OUR CLIENTS -->
+    <!-- hide SECTION in mobile -->
     <section id="our-clients">
+      <h3> Our Clients</h3>
+      <ul>
+        <li>client 1</li>
+        <li>client 2</li>
+        <li>client 3</li>
+        <li>client 4</li>
+        <li>client 5</li>
+      </ul>
     </section>
-    <footer>
 
+    <!-- hide SECTION in mobile -->
+    <footer>
+      <img src="" alt="Fleet Logo">
+      <div>
+        <p>2019 rights reserved Lorem, ipsum dolor.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, minus tempore! HTTP://WEBSITE.COM.BR</p>
+      </div>
     </footer>
   </main>
 </body>
