@@ -31,6 +31,19 @@ const teachersDatabase = [
 ];
 // ps. data base could increase overtime
 
+ // create featured teachers database by SHUFFLING through the teachersDatabase
+ let featTeachersDatabase = [];
+ let iBefore = 0;
+ let ramdonIndex = 0;
+ for (let j = 0; j < 6; j++) {
+   let ramdonIndex = random(0, teachersDatabase.length);
+   if (ramdonIndex !== iBefore) {
+     featTeachersDatabase.push(ramdonIndex);
+   }
+   iBefore = ramdonIndex;
+ }
+// ----------------
+
 
 let featTeachers = document.getElementById('feat-teachers');
 
@@ -46,22 +59,13 @@ ul.id = 'teachers-grid';
 featTeachers.appendChild(ul);
 
 
+
+
 // create a card li items
 
 for (let i = 0; i < 6; i++) {
 
-  // create featured teachers database by SHUFFLING through the teachersDatabase
-  let featTeachersDatabase = [];
-  let iBefore = 0;
-  let ramdonIndex = 0;
-  for (let j = 0; j < 6; j++) {
-    let ramdonIndex = random(0, teachersDatabase.length);
-    iBefore = ramdonIndex;
-    if (ramdonIndex !== iBefore) {
-      featTeachersDatabase.push(ramdonIndex);
-    }
-  }
-
+ 
   let li = document.createElement('li');
   li.id = 'teachers-card';
   ul.appendChild(li);
