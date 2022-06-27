@@ -101,73 +101,61 @@ const teachersDatabase = [
 
 // create array with 5 ramdon integers
 //to be used as index to SHUFFLE through the teachersDatabase
-
 let sixRamdonIndexes = [];
-sixRamdonIndexes.push(random(0, 14));
-
+sixRamdonIndexes.push(random(0, teachersDatabase.length));
 while (sixRamdonIndexes.length < 6) {
-  let ramdonIndex = random(0, 14);
+  let ramdonIndex = random(0, teachersDatabase.length);
   if (sixRamdonIndexes.includes(ramdonIndex) == false) {
     sixRamdonIndexes.push(ramdonIndex);
     console.log(sixRamdonIndexes);
   }
 };
-
 // ----------------
 
-
 let featTeachers = document.getElementById('feat-teachers');
-
 //Section heading
 let h2 = document.createElement('h2');
 h2.className = 'card-heading';
 h2.textContent = 'Our Amazin Teachers';
 featTeachers.appendChild(h2);
-
+ // litle line between
+ let br = document.createElement('br');
+ featTeachers.appendChild(br);
 // create a card-gird ul list for teachers
 let ul = document.createElement('ul');
 ul.id = 'teachers-grid';
 featTeachers.appendChild(ul);
-
-
-
-
 // create a card li items
-
 for (let i = 0; i < 6; i++) {
-
-
   let li = document.createElement('li');
   li.id = 'teachers-card';
   ul.appendChild(li);
-
   // create elements & put in the cards li
-
   // card image
   let img = document.createElement('img');
   img.src = teachersDatabase[sixRamdonIndexes[i]].image;
   li.appendChild(img);
-
+  teachersDatabase[sixRamdonIndexes[i]].image;
   //div for card info
   let div = document.createElement('div');
   div.className = 'card-info';
   li.appendChild(div);
-
   // heading - teacher NAME
   let h3 = document.createElement('h3');
-  h3.className = 'card-heading';
   h3.textContent = teachersDatabase[sixRamdonIndexes[i]].name;
   div.appendChild(h3);
-
   // sub-heading "teacher highlight"
-  let p = document.createElement('p');
-  p.className = 'teacher-highlight';
-  p.textContent = teachersDatabase[sixRamdonIndexes[i]].highlight;
-  div.appendChild(p);
-
+  let p1 = document.createElement('p1');
+  p1.textContent = teachersDatabase[sixRamdonIndexes[i]].highlight;
+  div.appendChild(p1);
+  // litle line between
+  br = document.createElement('br');
+  div.appendChild(br);
   //short description
-  p = document.createElement('p');
-  p.className = 'card-para';
-  p.textContent = teachersDatabase[sixRamdonIndexes[i]].description;
-  div.appendChild(p);
+  p2 = document.createElement('p2');
+  p2.textContent = teachersDatabase[sixRamdonIndexes[i]].description;
+  div.appendChild(p2);
 }
+let button = document.createElement('button');
+button.innerHTML = 'more <i class="fa-solid fa-angle-down"></i>';
+featTeachers.appendChild(button);

@@ -3,9 +3,16 @@
 
 @font-face {
   font-family: 'Cocogoose';
-  src: url(onts/Cocogoose.ttf);
+  src: url(fonts/Cocogoose.ttf);
 }
-
+@font-face {
+  font-family: 'Cocogoose-bold';
+  src: url(fonts/Cocogoose-Pro/Cocogoose-Pro-Comp-Bold-trial.ttf);
+}
+@font-face {
+  font-family: 'Cocogoose-thin';
+  src: url(fonts/Cocogoose-Pro/Cocogoose-Pro-Comp-Thin-trial.ttf);
+}
 //Globals
 
 html {
@@ -20,6 +27,10 @@ html {
   -webkit-box-sizing: inherit;
   -moz-box-sizing: inherit;
   box-sizing: inherit;
+  // margin-block-start: 0;
+  // margin-block-end: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
