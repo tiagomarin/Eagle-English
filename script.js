@@ -102,14 +102,15 @@ const teachersDatabase = [
 // create array with 5 ramdon integers
 //to be used as index to SHUFFLE through the teachersDatabase
 let sixRamdonIndexes = [];
-sixRamdonIndexes.push(random(0, teachersDatabase.length));
+sixRamdonIndexes.push(random(0, teachersDatabase.length - 1));
 while (sixRamdonIndexes.length < 6) {
-  let ramdonIndex = random(0, teachersDatabase.length);
+  let ramdonIndex = random(0, teachersDatabase.length - 1);
   if (sixRamdonIndexes.includes(ramdonIndex) == false) {
     sixRamdonIndexes.push(ramdonIndex);
     console.log(sixRamdonIndexes);
   }
 };
+
 // ----------------
 
 let featTeachers = document.getElementById('feat-teachers');
@@ -133,7 +134,7 @@ for (let i = 0; i < 6; i++) {
   // create elements & put in the cards li
   // card image
   let img = document.createElement('img');
-  img.src = teachersDatabase[sixRamdonIndexes[i]].image;
+  img.src = teachersDatabase[sixRamdonIndexes[i]].image; 
   li.appendChild(img);
   teachersDatabase[sixRamdonIndexes[i]].image;
   //div for card info
