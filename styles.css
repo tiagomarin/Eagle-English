@@ -1,11 +1,24 @@
-body {
-  background-color: blanchedalmond;
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
 }
 
-.modal-on{
+body {
+  background-color: blanchedalmond;
+  font-family: 'Cocogoose', sans-serif;
+  padding: 0 20px;
+}
+
+.modal-on {
   overflow: hidden;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 }
+
 /* .br {
   display: block;
   margin-bottom: 0em;
@@ -62,4 +75,29 @@ header button {
   height: 2px;
   margin-bottom: 2px;
   background-color: aliceblue;
+}
+
+#feat-teachers {
+  background-color: rgb(140, 222, 226);
+}
+
+#teachers-grid {
+  display: grid;
+  gap: 20px;
+  /*desktop media query:*/
+  grid-template-columns: 1fr 1fr;
+}
+
+#teachers-card {
+  display: flex;
+  background-color: rgb(187, 186, 186);
+  gap: 20px;
+}
+
+#teachers-card img {
+  height: 200px;
+}
+.card-info {
+  display: flex;
+  flex-direction: column;
 }

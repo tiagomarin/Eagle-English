@@ -1,0 +1,31 @@
+@import"https://fonts.googleapis.com/css2?family=Lato&display=swap";
+
+@font-face {
+  font-family: "Cocogoose";
+  src: url(onts/Cocogoose.ttf)
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit
+}
+
+body {
+  margin: 0;
+  padding: 0
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 0
+}
+
+/*# sourceMappingURL=style.min.css.map */
