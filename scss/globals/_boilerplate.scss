@@ -1,24 +1,17 @@
 // Fonts
+// Lato
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+//Cocogoose
+@import url('http://fonts.cdnfonts.com/css/cocogoose'); 
 
-@font-face {
-  font-family: 'Cocogoose';
-  src: url(fonts/Cocogoose.ttf);
-}
-@font-face {
-  font-family: 'Cocogoose-bold';
-  src: url(fonts/Cocogoose-Pro/Cocogoose-Pro-Comp-Bold-trial.ttf);
-}
-@font-face {
-  font-family: 'Cocogoose-thin';
-  src: url(fonts/Cocogoose-Pro/Cocogoose-Pro-Comp-Thin-trial.ttf);
-}
+
 //Globals
 
 html {
   box-sizing: border-box;
   font-size: 62.5%;
   scroll-behavior: smooth;
+  font-family: Lato, sans-serif;
 }
 
 *,

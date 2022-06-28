@@ -119,24 +119,28 @@ let h2 = document.createElement('h2');
 h2.className = 'card-heading';
 h2.textContent = 'Our Amazin Teachers';
 featTeachers.appendChild(h2);
- // litle line between
- let br = document.createElement('br');
- featTeachers.appendChild(br);
+// litle line between
+let span = document.createElement('span');
+featTeachers.appendChild(span);
 // create a card-gird ul list for teachers
 let ul = document.createElement('ul');
 ul.id = 'teachers-grid';
 featTeachers.appendChild(ul);
-// create a card li items
+
+// create a cards  (li items
 for (let i = 0; i < 6; i++) {
   let li = document.createElement('li');
   li.id = 'teachers-card';
   ul.appendChild(li);
   // create elements & put in the cards li
+  // card image container
+  let divImg = document.createElement('div');
+  divImg.classList = "img-container";
+  li.appendChild(divImg);
   // card image
   let img = document.createElement('img');
-  img.src = teachersDatabase[sixRamdonIndexes[i]].image; 
-  li.appendChild(img);
-  teachersDatabase[sixRamdonIndexes[i]].image;
+  img.src = teachersDatabase[sixRamdonIndexes[i]].image;
+  divImg.appendChild(img);
   //div for card info
   let div = document.createElement('div');
   div.className = 'card-info';
