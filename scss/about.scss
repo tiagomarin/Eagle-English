@@ -1,7 +1,7 @@
 @forward 'globals';
 
 main {
-  background: url("assets/background/background-mobile.png") repeat-y center fixed;
+  background: url("/assets/background/background-mobile.png") center fixed;
 }
 
 .menu-on {
@@ -15,13 +15,17 @@ main {
   bottom: 0;
   margin: 0;
   padding: 0;
+  height: 100%;
+  overflow: hidden;
 }
 
 .mobile-menu {
   display: none;
   width: 70%;
   height: 100%;
-  background: url(assets/design/main-program-background.png)var(--grey-dark);
+  overflow: hidden;
+  background: rgba(26, 26, 31, 0.8);
+  // background: url(/assets/design/main-program-background.png) var(--grey-dark);
   list-style: none;
   font-size: 20px;
   padding-top: 10rem;
@@ -70,8 +74,7 @@ header button {
 }
 
 .menu-btn.colored {
-  background-color: white;
-}
+  background-color: rgba(255, 255, 255, 0.85);}
 
 .display-flex {
   display: flex;
@@ -105,8 +108,7 @@ header button {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background-color: rgb(248, 248, 248, 0.8);
-  background-image: url('assets/background/background-mobile.png');
+  background-color: rgba(255, 255, 255, 0.85);
   padding: 8rem 0 7.5rem;
 
 
@@ -118,10 +120,10 @@ header button {
     font-family: Cocogoose, sans-serif;
     text-transform: uppercase;
     line-height: 3.3rem;
-    // background-clip: text;
-    // -webkit-background-clip: text;
-    // color: transparent;
-    // background-image: url('assets/background/background-mobile.png');
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: rgba(255, 0, 0, 0.6);
+    background-image: url('/assets/background/text-background.png');
     padding-top: 1rem;
   }
 
@@ -167,7 +169,7 @@ header button {
 }
 
 // -----------------------
-// SECTION COURSE FEATURES
+// SECTION ABOUT LOGO
 #logo-space>* {
   width: 90%;
 }
@@ -177,7 +179,8 @@ header button {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background: url(assets/design/main-program-background.png);
+  background-color: rgb(255, 255, 255);
+
   padding: 3.6rem 0 4rem;
 
   h2 {
@@ -223,6 +226,8 @@ header button {
   text-align: center;
   justify-content: center;
   padding: 3.6rem 0 4rem;
+  background-color: rgba(255, 255, 255, 0.85);
+
 
   h2 {
     color: var(--grey-dark);
@@ -306,13 +311,14 @@ footer>* {
 }
 
 footer {
-  width: 90%;
+  // width: 100%;
   display: flex;
   flex-direction: row;
-  padding: 2.6rem 0 2.6rem;
+  padding: 2.6rem 2rem;
   align-items: center;
   justify-content: space-evenly;
-
+  background-color: rgba(255, 255, 255, 0.96);
+  
   img {
     width: 45%;
   }

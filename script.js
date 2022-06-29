@@ -130,8 +130,13 @@ featTeachers.appendChild(ul);
 // create a cards  (li items
 for (let i = 0; i < 6; i++) {
   let li = document.createElement('li');
-  li.id = 'teachers-card';
+  li.classList = 'teachers-card';
+  if (i > 1) { // class only for 3rd to 6th card
+    li.classList = 'teachers-card more-mobile';
+  }
   ul.appendChild(li);
+
+
   // create elements & put in the cards li
   // card image container
   let divImg = document.createElement('div');
@@ -162,5 +167,6 @@ for (let i = 0; i < 6; i++) {
   div.appendChild(p2);
 }
 let button = document.createElement('button');
+button.id = "see-more"
 button.innerHTML = 'more <i class="fa-solid fa-angle-down"></i>';
 featTeachers.appendChild(button);

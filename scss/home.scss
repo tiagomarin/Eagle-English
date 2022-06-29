@@ -1,7 +1,7 @@
 @forward 'globals';
 
 main {
-  background: url("assets/background/background-mobile.png") repeat-y center fixed;
+  background: url("/assets/background/background-mobile.png") center fixed;
 }
 
 .menu-on {
@@ -21,7 +21,7 @@ main {
   display: none;
   width: 70%;
   height: 100%;
-  background: url(assets/design/main-program-background.png)var(--grey-dark);
+  background: url(/assets/design/main-program-background.png) rgba(26, 26, 31, 0.8);
   list-style: none;
   font-size: 20px;
   padding-top: 10rem;
@@ -63,7 +63,7 @@ header button {
 }
 
 .menu-btn.colored {
-  background-color: white;
+  background-color: rgb(255, 255, 255, 0.85)
 }
 
 .display-flex {
@@ -88,14 +88,13 @@ header button {
   display: none;
 }
 
- 
+
 
 #intro {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(248, 248, 248, 0.8);
-  background-image: url('assets/background/background-mobile.png');
+  background-color: rgba(255, 255, 255, 0.85);
   padding: 8rem 0 7.5rem;
 
 
@@ -107,10 +106,12 @@ header button {
     font-family: Cocogoose, sans-serif;
     text-transform: uppercase;
     line-height: 3.3rem;
-    // background-clip: text;
-    // -webkit-background-clip: text;
-    // color: transparent;
-    // background-image: url('assets/background/background-mobile.png');
+    text-align: left;
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: rgba(255, 0, 0, 0.6);
+    background-image: url('/assets/background/text-background.png');
     padding-top: 1rem;
   }
 
@@ -157,7 +158,8 @@ header button {
 }
 
 #course-features {
-  background: url(assets/design/main-program-background.png)var(--grey-dark);
+  background: var(--grey-dark);
+  background-image: url('/assets/design/main-program-background.png');
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -240,6 +242,7 @@ header button {
   justify-content: center;
   // margin: 0;
   padding: 3.6rem 0 4rem;
+  background-color: rgb(255, 255, 255, 0.8);
 
   h2 {
     color: var(--grey-dark);
@@ -270,11 +273,15 @@ header button {
   // grid-template-columns: 1fr 1fr;
 }
 
-#teachers-card {
+.teachers-card {
   display: flex;
   width: 95%;
   gap: 20px;
   padding: 5%;
+}
+
+.teachers-card.more-mobile {
+  display: none;
 }
 
 .img-container {
@@ -285,10 +292,10 @@ header button {
   max-width: 10rem;
   align-items: flex-end;
   justify-content: end;
-  background-image: url('assets/background/img-background-mobile.png');
+  background-image: url("assets/background/img-background-mobile.png");
 }
 
-#teachers-card img {
+.teachers-card img {
   height: 85%;
   // width: 35%;
 }

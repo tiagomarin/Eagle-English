@@ -3,6 +3,8 @@ const clsModalBtn = document.querySelector('.close-menu-btn');
 const mobMenu = document.querySelector('.mobile-menu');
 const mobMenuContainer = document.querySelector('#mobMenuContainer');
 const body = document.body;
+const seeMore = document.querySelector('#see-more');
+const moreMobile = document.querySelector('.more-mobile');
 
 //open modal reusable function
 function openModal(element) {
@@ -44,3 +46,8 @@ window.onscroll = function () {
     openMenuBtn.classList.remove("colored");
   }
 };
+
+seeMore.addEventListener('click', () => {
+  moreMobile.classList.toggle('more-mobile');
+});
+
