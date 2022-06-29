@@ -24,8 +24,7 @@ main {
   width: 70%;
   height: 100%;
   overflow: hidden;
-  background: rgba(26, 26, 31, 0.8);
-  // background: url(/assets/design/main-program-background.png) var(--grey-dark);
+  background: rgba(26, 26, 31, 0.85);
   list-style: none;
   font-size: 20px;
   padding-top: 10rem;
@@ -37,12 +36,13 @@ main {
       width: 4rem;
     }
   }
+}
 
-  #logo {
-    margin-top: 2rem;
-    width: 20rem;
+#logo-mob-menu {
+  margin-top: 8rem;
 
-    background-image: url(assets/logo/white-small.png);
+  img {
+    width: 15rem;
   }
 }
 
@@ -74,7 +74,8 @@ header button {
 }
 
 .menu-btn.colored {
-  background-color: rgba(255, 255, 255, 0.85);}
+  background-color: rgba(255, 255, 255, 0.85);
+}
 
 .display-flex {
   display: flex;
@@ -90,7 +91,7 @@ header button {
   display: block;
   height: 2px;
   margin-bottom: 2px;
-  background-color: aliceblue;
+  background-color: var(--grey-light);
 }
 
 #pre-nav,
@@ -135,37 +136,49 @@ header button {
     font-family: 'Lato', sans-serif;
   }
 
-  p {
-    color: var(--grey-dark);
-    font-size: 1.3rem;
-    font-weight: 400;
-    line-height: 2.2rem;
-    background-color: white;
-    padding: 3% 4%;
-    border: 0.1rem solid var(--grey-light);
-    margin: 1.8rem 0;
-  }
+  div {
+    span {
+      background-image: url("/assets/design/circle.png");
+      background-size: 100%;
+      background-color: white;
+      height: 8rem;
+      width: 8rem;
+    }
 
-  h3 {
-    color: var(--dark-grey);
-    font-size: 2.4rem;
-    font-weight: 500;
-    font-family: 'Cocogoose', sans-serif;
-    text-transform: uppercase;
+    p {
+      color: var(--grey-dark);
+      font-size: 1.3rem;
+      font-weight: 400;
+      line-height: 2.2rem;
+      background-color: white;
+      padding: 3% 4%;
+      border: 0.1rem solid var(--grey-light);
+      margin: 5.8rem 0;
+    }
   }
+}
 
-  span {
-    font-size: 1.2rem;
-    margin-top: 0.4rem;
-    width: 24rem;
-  }
 
-  a {
-    color: var(--grey-dark);
-    font-weight: bold
-  }
+h3 {
+  color: var(--dark-grey);
+  font-size: 2.4rem;
+  font-weight: 500;
+  font-family: 'Cocogoose', sans-serif;
+  text-transform: uppercase;
+}
 
-  ;
+span {
+  font-size: 1.2rem;
+  margin-top: 0.4rem;
+  width: 24rem;
+}
+
+a {
+  color: var(--grey-dark);
+  font-weight: bold
+}
+
+;
 }
 
 // -----------------------
@@ -227,6 +240,7 @@ header button {
   justify-content: center;
   padding: 3.6rem 0 4rem;
   background-color: rgba(255, 255, 255, 0.85);
+  gap: 1.4rem;
 
 
   h2 {
@@ -241,7 +255,6 @@ header button {
     width: 4rem;
     background-color: var(--orange);
     border-radius: 1rem;
-    margin: 2rem 0;
   }
 
   p {
@@ -249,8 +262,40 @@ header button {
     font-size: 1.2rem;
     font-weight: 400;
     line-height: 1.6rem;
-    padding: 3% 0;
-    margin: 1.8rem 0;
+    margin: 1rem 0 1.8rem;
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.6rem;
+    aspect-ratio: 16 / 9;
+
+    h3 {
+      font-size: 2.2rem;
+      color: white;
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: white;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .first {
+    background-image: url('/assets/pictures/testemonial-1-small.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  .second {
+    background-image: url('/assets/pictures/testemonial-2-small.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
   }
 }
 
@@ -318,9 +363,9 @@ footer {
   align-items: center;
   justify-content: space-evenly;
   background-color: rgba(255, 255, 255, 0.96);
-  
+
   img {
-    width: 45%;
+    width: 40%;
   }
 
   div {
