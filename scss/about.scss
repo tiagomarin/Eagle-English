@@ -16,7 +16,6 @@ main {
   margin: 0;
   padding: 0;
   height: 100%;
-  overflow: hidden;
 }
 
 .mobile-menu {
@@ -100,7 +99,7 @@ header button {
 }
 
 //  SECTION - INTRO
-#intro>* {
+#intro > * {
   width: 90%;
 }
 
@@ -112,9 +111,7 @@ header button {
   background-color: rgba(255, 255, 255, 0.85);
   padding: 8rem 0 7.5rem;
 
-
   h1 {
-    color: var(--orange);
     font-size: 3.2rem;
     font-weight: 500;
     // font-size: 6.8rem; desktop
@@ -158,7 +155,6 @@ header button {
   }
 }
 
-
 h3 {
   color: var(--dark-grey);
   font-size: 2.4rem;
@@ -175,15 +171,12 @@ span {
 
 a {
   color: var(--grey-dark);
-  font-weight: bold
-}
-
-;
+  font-weight: bold;
 }
 
 // -----------------------
 // SECTION ABOUT LOGO
-#logo-space>* {
+#logo-space > * {
   width: 90%;
 }
 
@@ -193,7 +186,6 @@ a {
   align-items: center;
   text-align: center;
   background-color: rgb(255, 255, 255);
-
   padding: 3.6rem 0 4rem;
 
   h2 {
@@ -228,7 +220,7 @@ a {
 
 // -----------------------
 // SECTION TESTIMONIALS
-#testimonials>* {
+#testimonials > * {
   width: 90%;
 }
 
@@ -241,7 +233,6 @@ a {
   padding: 3.6rem 0 4rem;
   background-color: rgba(255, 255, 255, 0.85);
   gap: 1.4rem;
-
 
   h2 {
     color: var(--grey-dark);
@@ -302,7 +293,7 @@ a {
 // -----------------------
 // SECTION OUR CLIENTS
 
-#our-clients>* {
+#our-clients > * {
   width: 90%;
 }
 
@@ -347,11 +338,10 @@ a {
   width: 100%;
 }
 
-
 // -----------------------
 // FOOTER
 
-footer>* {
+footer > * {
   width: 90%;
 }
 

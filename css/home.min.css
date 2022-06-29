@@ -1,1 +1,383 @@
-@import"https://fonts.googleapis.com/css2?family=Lato&display=swap";@import"http://fonts.cdnfonts.com/css/cocogoose";html{box-sizing:border-box;font-size:62.5%;scroll-behavior:smooth;font-family:Lato,sans-serif}*,*::before,*::after{box-sizing:inherit;margin:0;padding:0}body{margin:0;padding:0}h1,h2,h3,p,ul,li,div{margin:0}:root{--grey-dark: #272a31;--grey-light: #d3d3d3;--orange: #ec5242}main{background:url("/assets/background/background-mobile.png") center fixed}.menu-on{overflow:hidden;background-color:rgba(0,0,0,.5);-webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px);position:fixed;top:0;left:0;right:0;bottom:0;margin:0;padding:0;overflow:hidden}.mobile-menu{display:none;width:70%;height:100%;background:rgba(26,26,31,.85);list-style:none;font-size:20px;padding-top:10rem}.mobile-menu li{padding-left:2.5rem}.mobile-menu li i{width:4rem}#logo-mob-menu{margin-top:8rem}#logo-mob-menu img{width:15rem}.mobile-menu i,.mobile-menu a{text-decoration:none;color:var(--grey-light)}header button{display:flex;background-color:rgba(0,0,0,0);width:100%;border:0;font-size:3rem;line-height:4rem;position:fixed;left:0;top:0}header button i{margin:1.6rem 0 1.6rem 2.6rem}.menu-btn.transparent{background-color:rgba(0,0,0,0)}.menu-btn.colored{background-color:rgba(255,255,255,.85)}.display-flex{display:flex;flex-direction:column;gap:1.4rem}.closeup{font-size:3.4rem}.br-med{display:block;height:2px;margin-bottom:2px;background-color:var(--grey-light)}#pre-nav,#desktop-nav{display:none}#intro>*{width:90%}#intro{display:flex;flex-direction:column;align-items:center;text-align:left;background-color:rgba(255,255,255,.85);padding:8rem 0 7.5rem}#intro h1{color:var(--orange);font-size:3.2rem;font-weight:500;font-family:Cocogoose,sans-serif;text-transform:uppercase;line-height:3.3rem;text-align:left;background-clip:text;-webkit-background-clip:text;color:rgba(255,0,0,.6);background-image:url("/assets/background/text-background.png");padding-top:1rem}#intro h2{color:var(--orange);font-size:2rem;font-weight:200;font-family:"Lato",sans-serif}#intro p{color:var(--grey-dark);font-size:1.3rem;font-family:"Lato",sans-serif;font-weight:400;line-height:2.2rem;border:.2rem solid #fff;padding:3% 8% 3% 4%;margin:1.8rem 0}#intro h3{color:var(--dark-grey);font-size:2.4rem;font-weight:500;font-family:"Cocogoose",sans-serif;text-transform:uppercase}#intro span{font-size:1.6rem;margin-top:.4rem}#course-features>*{width:90%}#course-features{background:var(--grey-dark);background-image:url("/assets/design/main-program-background.png");display:flex;flex-direction:column;align-items:center;padding:3.6rem 0 4rem}#course-features h2{color:var(--grey-light);font-size:2rem;text-align:center}#course-features span{display:block;height:.1em;width:4rem;background-color:var(--orange);border-radius:1rem;margin:1.4rem 0 4rem}#course-features ul{display:flex;flex-direction:column;gap:1rem;list-style:none;margin:0;padding:0;align-items:center;justify-content:center}#course-features li{background-color:rgba(255,255,255,.1);display:flex;gap:.8rem;align-items:center;padding:4%}#course-features div{display:flex;justify-content:center;width:10rem;font-size:3rem;color:var(--grey-light)}#course-features h3{color:var(--orange);font-size:1.6rem;min-width:90px}#course-features p{grid-column:span 5;color:var(--grey-light);font-size:1.2rem}#course-features a{font-size:1.8rem;font-weight:600;letter-spacing:.1rem;text-decoration:none;text-align:center;color:#fff;background-color:var(--orange);padding:2.2rem 0;width:70%;margin-top:3.2rem}#feat-teachers{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:3.6rem 0 4rem;background-color:rgba(255,255,255,.8)}#feat-teachers h2{color:var(--grey-dark);font-size:2rem;text-align:center}#feat-teachers span{display:block;height:.1em;width:4rem;background-color:var(--orange);border-radius:1rem;margin:2rem 0}#teachers-grid{display:flex;flex-wrap:wrap;gap:15px;align-items:center;justify-content:center;margin:auto}.teachers-card{display:flex;width:95%;gap:20px;padding:5%}.teachers-card.more-mobile{display:none}.img-container{display:flex;min-height:10rem;min-width:10rem;max-height:10rem;max-width:10rem;align-items:flex-end;justify-content:end;background-image:url("/assets/design/img-back-transp.png");background-size:140%}.teachers-card img{height:90%}.card-info{display:flex;flex-direction:column;color:var(--grey-dark);justify-content:center}.card-info h3{font-size:1.4rem;padding-bottom:.6rem}.card-info p1,.card-info p2{font-size:.9rem}.card-info p1{font-style:italic;color:var(--orange)}.card-info .br{display:block;height:2px;margin-bottom:2px;background-color:var(--orange)}#feat-teachers button{width:95%;height:5rem;text-transform:uppercase;color:var(--grey-dark);background-color:#fff;border:.1rem solid var(--grey-light);margin-top:2rem}#feat-teachers i{color:var(--orange)}#our-clients{display:none}footer{display:none}/*# sourceMappingURL=home.min.css.map */
+@import "https://fonts.googleapis.com/css2?family=Lato&display=swap";
+@import "http://fonts.cdnfonts.com/css/cocogoose";
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  font-family: Lato, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+div {
+  margin: 0;
+}
+
+:root {
+  --grey-dark: #272a31;
+  --grey-light: #d3d3d3;
+  --orange: #ec5242;
+}
+
+main {
+  background: url("/assets/background/background-mobile.png") center fixed;
+}
+
+.menu-on {
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.mobile-menu {
+  display: none;
+  width: 70%;
+  height: 100%;
+  background: rgba(26, 26, 31, 0.85);
+  list-style: none;
+  font-size: 20px;
+  padding-top: 10rem;
+}
+
+.mobile-menu li {
+  padding-left: 2.5rem;
+}
+
+.mobile-menu li i {
+  width: 4rem;
+}
+
+#logo-mob-menu {
+  margin-top: 8rem;
+}
+
+#logo-mob-menu img {
+  width: 15rem;
+}
+
+.mobile-menu i,
+.mobile-menu a {
+  text-decoration: none;
+  color: var(--grey-light);
+}
+
+header button {
+  display: flex;
+  background-color: rgba(0, 0, 0, 0);
+  width: 100%;
+  border: 0;
+  font-size: 3rem;
+  line-height: 4rem;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+header button i {
+  margin: 1.6rem 0 1.6rem 2.6rem;
+}
+
+.menu-btn.transparent {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.menu-btn.colored {
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+.display-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.closeup {
+  font-size: 3.4rem;
+}
+
+.br-med {
+  display: block;
+  height: 2px;
+  margin-bottom: 2px;
+  background-color: var(--grey-light);
+}
+
+#pre-nav,
+#desktop-nav {
+  display: none;
+}
+
+#intro > * {
+  width: 90%;
+}
+
+#intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 8rem 0 7.5rem;
+}
+
+#intro h1 {
+  font-size: 3.2rem;
+  font-weight: 500;
+  font-family: Cocogoose, sans-serif;
+  text-transform: uppercase;
+  line-height: 3.3rem;
+  text-align: left;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: rgba(255, 0, 0, 0.6);
+  background-image: url("/assets/background/text-background.png");
+  padding-top: 1rem;
+}
+
+#intro h2 {
+  color: var(--orange);
+  font-size: 2rem;
+  font-weight: 200;
+  font-family: "Lato", sans-serif;
+}
+
+#intro p {
+  color: var(--grey-dark);
+  font-size: 1.3rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 2.2rem;
+  border: 0.2rem solid #fff;
+  padding: 3% 8% 3% 4%;
+  margin: 1.8rem 0;
+}
+
+#intro h3 {
+  color: var(--dark-grey);
+  font-size: 2.4rem;
+  font-weight: 500;
+  font-family: "Cocogoose", sans-serif;
+  text-transform: uppercase;
+}
+
+#intro span {
+  font-size: 1.6rem;
+  margin-top: 0.4rem;
+}
+
+#course-features > * {
+  width: 90%;
+}
+
+#course-features {
+  background: var(--grey-dark);
+  background-image: url("/assets/design/main-program-background.png");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3.6rem 0 4rem;
+}
+
+#course-features h2 {
+  color: var(--grey-light);
+  font-size: 2rem;
+  text-align: center;
+}
+
+#course-features span {
+  display: block;
+  height: 0.1em;
+  width: 4rem;
+  background-color: var(--orange);
+  border-radius: 1rem;
+  margin: 1.4rem 0 4rem;
+}
+
+#course-features ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+#course-features li {
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+  padding: 4%;
+}
+
+#course-features div {
+  display: flex;
+  justify-content: center;
+  width: 10rem;
+  font-size: 3rem;
+  color: var(--grey-light);
+}
+
+#course-features h3 {
+  color: var(--orange);
+  font-size: 1.6rem;
+  min-width: 90px;
+}
+
+#course-features p {
+  grid-column: span 5;
+  color: var(--grey-light);
+  font-size: 1.2rem;
+}
+
+#course-features a {
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  background-color: var(--orange);
+  padding: 2.2rem 0;
+  width: 70%;
+  margin-top: 3.2rem;
+}
+
+#feat-teachers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3.6rem 0 4rem;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+#feat-teachers h2 {
+  color: var(--grey-dark);
+  font-size: 2rem;
+  text-align: center;
+}
+
+#feat-teachers span {
+  display: block;
+  height: 0.1em;
+  width: 4rem;
+  background-color: var(--orange);
+  border-radius: 1rem;
+  margin: 2rem 0;
+}
+
+#teachers-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.teachers-card {
+  display: flex;
+  width: 95%;
+  gap: 20px;
+  padding: 5%;
+}
+
+.teachers-card.more-mobile {
+  display: none;
+}
+
+.img-container {
+  display: flex;
+  min-height: 10rem;
+  min-width: 10rem;
+  max-height: 10rem;
+  max-width: 10rem;
+  align-items: flex-end;
+  justify-content: end;
+  background-image: url("/assets/design/img-back-transp.png");
+  background-size: 140%;
+}
+
+.teachers-card img {
+  height: 90%;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  color: var(--grey-dark);
+  justify-content: center;
+}
+
+.card-info h3 {
+  font-size: 1.4rem;
+  padding-bottom: 0.6rem;
+}
+
+.card-info .p1,
+.card-info .p2 {
+  font-size: 0.9rem;
+}
+
+.card-info .p1 {
+  font-style: italic;
+  color: var(--orange);
+}
+
+.card-info .br {
+  display: block;
+  height: 2px;
+  margin-bottom: 2px;
+  background-color: var(--orange);
+}
+
+#feat-teachers button {
+  width: 95%;
+  height: 5rem;
+  text-transform: uppercase;
+  color: var(--grey-dark);
+  background-color: #fff;
+  border: 0.1rem solid var(--grey-light);
+  margin-top: 2rem;
+}
+
+#feat-teachers i {
+  color: var(--orange);
+}
+
+#our-clients {
+  display: none;
+}
+
+footer {
+  display: none;
+}

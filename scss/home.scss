@@ -15,7 +15,6 @@ main {
   bottom: 0;
   margin: 0;
   padding: 0;
-  overflow: hidden;
 }
 
 .mobile-menu {
@@ -72,7 +71,7 @@ header button {
 }
 
 .menu-btn.colored {
-  background-color: rgb(255, 255, 255, 0.85)
+  background-color: rgb(255, 255, 255, 0.85);
 }
 
 .display-flex {
@@ -97,9 +96,8 @@ header button {
   display: none;
 }
 
-
 // SECTION INTRO
-#intro>* {
+#intro > * {
   width: 90%;
 }
 
@@ -111,9 +109,7 @@ header button {
   background-color: rgba(255, 255, 255, 0.85);
   padding: 8rem 0 7.5rem;
 
-
   h1 {
-    color: var(--orange);
     font-size: 3.2rem;
     font-weight: 500;
     // font-size: 6.8rem; desktop
@@ -121,7 +117,6 @@ header button {
     text-transform: uppercase;
     line-height: 3.3rem;
     text-align: left;
-
     background-clip: text;
     -webkit-background-clip: text;
     color: rgba(255, 0, 0, 0.6);
@@ -161,13 +156,11 @@ header button {
     font-size: 1.6rem;
     margin-top: 0.4rem;
   }
-
-  ;
 }
 
 // -----------------------
 // SECTION COURSE FEATURES
-#course-features>* {
+#course-features > * {
   width: 90%;
 }
 
@@ -322,17 +315,16 @@ header button {
   justify-content: center;
 
   h3 {
-
     font-size: 1.4rem;
     padding-bottom: 0.6rem;
   }
 
-  p1,
-  p2 {
+  .p1,
+  .p2 {
     font-size: 0.9rem;
   }
 
-  p1 {
+  .p1 {
     font-style: italic;
     color: var(--orange);
   }

@@ -34,7 +34,7 @@ body {
   margin-bottom: 2em;
 } */
 
-/*add with js for mobile menu */
+/* add with js for mobile menu */
 .mobile-menu {
   display: none;
   margin: 0;
@@ -84,7 +84,8 @@ header button {
 #teachers-grid {
   display: grid;
   gap: 20px;
-  /*desktop media query:*/
+
+  /* desktop media query: */
   grid-template-columns: 1fr 1fr;
 }
 
@@ -97,6 +98,7 @@ header button {
 #teachers-card img {
   height: 200px;
 }
+
 .card-info {
   display: flex;
   flex-direction: column;
