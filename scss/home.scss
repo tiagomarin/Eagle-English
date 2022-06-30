@@ -106,11 +106,6 @@ main {
   background-color: var(--grey-light);
 }
 
-#pre-nav,
-#desktop-nav {
-  display: none;
-}
-
 // SECTION INTRO
 #intro>* {
   width: 90%;
@@ -216,7 +211,6 @@ main {
   li {
     background-color: rgb(255, 255, 255, 0.1);
     display: flex;
-    // flex-wrap: wrap;
     gap: 0.8rem;
     align-items: center;
     padding: 4%;
@@ -228,7 +222,6 @@ main {
     width: 10rem;
     font-size: 3rem;
     color: var(--grey-light);
-    // padding-right: 1.2rem;
   }
 
   h3 {
@@ -244,7 +237,7 @@ main {
   }
 
   a {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     font-weight: 600;
     letter-spacing: 0.1rem;
     text-decoration: none;
@@ -257,6 +250,8 @@ main {
   }
 }
 
+// -------------------------
+// SECTION FEATURED TEACHERS
 #feat-teachers {
   display: flex;
   flex-direction: column;
@@ -285,14 +280,10 @@ main {
 #teachers-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: 1.5rem;
   align-items: center;
   justify-content: center;
   margin: auto;
-  //desktop media query:
-  // display: grid;
-  // gap: 20px;
-  // grid-template-columns: 1fr 1fr;
 }
 
 .teachers-card {
@@ -320,7 +311,6 @@ main {
 
 .teachers-card img {
   height: 90%;
-  // width: 35%;
 }
 
 .card-info {
@@ -350,12 +340,6 @@ main {
     margin-bottom: 2px;
     background-color: var(--orange);
   }
-
-  // .line {
-  //   height: 0.2rem;
-  //   margin-bottom: 1rem solid black;
-  //   width: 2rem;
-  // }
 }
 
 #feat-teachers button {
@@ -383,4 +367,236 @@ main {
 
 footer {
   display: none;
+}
+
+@media screen and (min-width: 768px) {
+
+  // background image
+  main {
+    background: url("../assets/background/background-desktop.png") center fixed;
+  }
+
+  // reduce font size proportionally
+  html {
+    font-size: 55%;
+  }
+
+  // hide mobile nav bar
+  #mobile-nav {
+    display: none;
+  }
+
+  // NAVIGATION BAR
+  #pre-nav {
+    background-color: var(--grey-dark);
+
+    ul li a,
+    ul li a i {
+      color: var(--grey-light);
+    }
+  }
+
+  #desktop-nav {
+    background-color: white;
+    min-height: 6rem;
+
+    ul li a {
+      color: inherit;
+    }
+  }
+
+  #pre-nav,
+  #desktop-nav {
+    display: flex;
+    align-items: center;
+    padding: 0 15%;
+
+    a {
+      justify-self: flex-start;
+
+      img {
+        height: 5rem;
+      }
+    }
+
+    ul {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+
+      li a {
+        text-decoration: none;
+      }
+    }
+  }
+
+  #pre-nav {
+    justify-content: flex-end;
+    height: 2rem;
+  }
+
+  #desktop-nav {
+    justify-content: space-between;
+  }
+
+  // SECTION INTRO
+
+  #intro>* {
+    width: 70%;
+  }
+
+  #intro {
+    h2 {
+      font-size: 3rem;
+    }
+
+    h1 {
+      font-size: 4.6rem;
+      line-height: 4.7rem;
+    }
+
+    p {
+      width: 60%;
+      align-self: flex-start;
+      margin-left: 15%;
+    }
+  }
+
+  // SECTION COURSE FEATURES
+  #course-features>* {
+    width: 70%;
+  }
+
+  #course-features {
+    text-align: center;
+
+    ul {
+      flex-direction: row;
+
+      li {
+        flex-direction: column;
+        padding: 2%;
+
+        div {
+          width: auto;
+
+          img {
+            height: 3rem;
+          }
+        }
+
+        p {
+          font-size: 1rem;
+        }
+      }
+    }
+
+    a {
+      background-color: transparent;
+      text-decoration: underline;
+      text-transform: uppercase;
+      color: var(--grey-light);
+    }
+  }
+
+
+  // SECTION FEATURED TEACHERS
+  #feat-teachers {
+    background-color: rgb(255, 255, 255, 0.9);
+  }
+
+  #feat-teachers>* {
+    width: 70%;
+  }
+
+  #teachers-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    justify-content: space-around;
+    padding: 4rem 0;
+
+    .teachers-card {
+      padding: 0;
+      width: 100%;
+    }
+  }
+
+  #see-more {
+    display: none;
+  }
+
+  .teachers-card.more-mobile {
+    display: flex;
+  }
+
+  // -----------------------
+  // SECTION OUR CLIENTS
+
+  #our-clients>* {
+    width: 90%;
+  }
+
+  #our-clients {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: var(--grey-dark);
+    padding: 3.6rem 0 4rem;
+
+    h3 {
+      color: var(--grey-light);
+      font-size: 2rem;
+      text-align: center;
+    }
+
+    span {
+      display: block;
+      height: 0.1em;
+      width: 4rem;
+      background-color: var(--orange);
+      border-radius: 1rem;
+      margin: 1rem 0 4rem;
+    }
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+
+      li {
+        width: 10rem;
+
+        img {
+          filter: grayscale(1);
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  // -----------------------
+  // FOOTER
+
+  footer {
+    width: 100%;
+    display: flex;
+    padding: 2.6rem 15%;
+    align-items: center;
+    justify-content: left;
+    gap: 5rem;
+    background-color: rgba(255, 255, 255, 0.90);
+
+    img {
+      width: 26%;
+    }
+
+    a {
+      color: inherit;
+    }
+  }
+
 }

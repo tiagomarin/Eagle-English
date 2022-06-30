@@ -115,7 +115,7 @@ const featTeachers = document.getElementById('feat-teachers');
 // Section heading
 const h2 = document.createElement('h2');
 h2.className = 'card-heading';
-h2.textContent = 'Our Amazin Teachers';
+h2.textContent = 'Our Amazing Teachers';
 featTeachers.appendChild(h2);
 // litle line between
 const span = document.createElement('span');
