@@ -3,7 +3,8 @@ const clsModalBtn = document.querySelector('.close-menu-btn');
 const mobMenu = document.querySelector('.mobile-menu');
 const mobMenuContainer = document.querySelector('#mobMenuContainer');
 const seeMore = document.querySelector('#see-more');
-const moreMobile = document.querySelector('.more-mobile');
+const moreMobile = document.querySelectorAll('.more-mobile');
+const seeMoreArr = Array.from(moreMobile);
 
 // open modal reusable function
 function openModal(element) {
@@ -34,6 +35,7 @@ window.addEventListener('click', (event) => {
   }
 });
 
+// add a white transparent background to nav bar MOBILE
 window.onscroll = function () {
   if (document.body.scrollTop >= 300 || document.documentElement.scrollTop >= 300) {
     openMenuBtn.classList.add('colored');
@@ -44,6 +46,9 @@ window.onscroll = function () {
   }
 };
 
+// show 4 more cards on MOBILE version of HOME page
 seeMore.addEventListener('click', () => {
-  moreMobile.classList.toggle('more-mobile');
+  seeMoreArr.forEach((child) => {
+    child.classList.toggle('more-mobile');
+  });
 });

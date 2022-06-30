@@ -1,9 +1,11 @@
-@forward 'globals';
+@import 'globals';
 
 main {
-  background: url("/assets/background/background-mobile.png") center fixed;
+  background: url("../assets/background/background-mobile.png") center fixed;
 }
 
+// HEADER
+// blur background outside menu modal
 .menu-on {
   overflow: hidden;
   background-color: rgb(0, 0, 0, 0.5);
@@ -21,6 +23,7 @@ main {
   display: none;
   width: 70%;
   height: 100%;
+  overflow: hidden;
   background: rgba(26, 26, 31, 0.85);
   list-style: none;
   font-size: 20px;
@@ -43,13 +46,25 @@ main {
   }
 }
 
-.mobile-menu i,
-.mobile-menu a {
-  text-decoration: none;
-  color: var(--grey-light);
+#mobile-nav {
+  .mobile-menu {
+    .close-menu-btn i {
+      color: var(--grey-light);
+    }
+
+    li {
+
+      i,
+      a {
+        text-decoration: none;
+        color: var(--grey-light);
+      }
+    }
+  }
 }
 
-header button {
+.menu-btn,
+.close-menu-btn {
   display: flex;
   background-color: transparent;
   width: 100%;
@@ -97,7 +112,7 @@ header button {
 }
 
 // SECTION INTRO
-#intro > * {
+#intro>* {
   width: 90%;
 }
 
@@ -120,7 +135,7 @@ header button {
     background-clip: text;
     -webkit-background-clip: text;
     color: rgba(255, 0, 0, 0.6);
-    background-image: url('/assets/background/text-background.png');
+    background-image: url('../assets/background/text-background.png');
     padding-top: 1rem;
   }
 
@@ -160,13 +175,13 @@ header button {
 
 // -----------------------
 // SECTION COURSE FEATURES
-#course-features > * {
+#course-features>* {
   width: 90%;
 }
 
 #course-features {
   background: var(--grey-dark);
-  background-image: url('/assets/design/main-program-background.png');
+  background-image: url('../assets/design/main-program-background.png');
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -299,7 +314,7 @@ header button {
   max-width: 10rem;
   align-items: flex-end;
   justify-content: end;
-  background-image: url("/assets/design/img-back-transp.png");
+  background-image: url("../assets/design/img-back-transp.png");
   background-size: 140%;
 }
 
@@ -354,8 +369,12 @@ header button {
   margin-top: 2rem;
 }
 
-#feat-teachers i {
-  color: var(--orange);
+#see-more {
+  button {
+    i {
+      color: var(--orange);
+    }
+  }
 }
 
 #our-clients {
