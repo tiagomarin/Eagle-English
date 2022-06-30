@@ -58,6 +58,7 @@ main {
     }
 
     li {
+
       i,
       a {
         text-decoration: none;
@@ -111,7 +112,7 @@ main {
 }
 
 // SECTION INTRO
-#intro > * {
+#intro>* {
   width: 90%;
 }
 
@@ -126,7 +127,7 @@ main {
   h1 {
     font-size: 3.2rem;
     font-weight: 500;
-    font-family: Cocogoose, sans-serif;
+    font-family: 'Cocogoose', sans-serif;
     text-transform: uppercase;
     line-height: 3.3rem;
     text-align: left;
@@ -172,7 +173,7 @@ main {
 
 // -----------------------
 // SECTION COURSE FEATURES
-#course-features > * {
+#course-features>* {
   width: 90%;
 }
 
@@ -452,7 +453,7 @@ footer {
 
   // SECTION INTRO
 
-  #intro > * {
+  #intro>* {
     width: 70%;
   }
 
@@ -474,7 +475,7 @@ footer {
   }
 
   // SECTION COURSE FEATURES
-  #course-features > * {
+  #course-features>* {
     width: 70%;
   }
 
@@ -515,7 +516,7 @@ footer {
     background-color: rgb(255, 255, 255, 0.9);
   }
 
-  #feat-teachers > * {
+  #feat-teachers>* {
     width: 70%;
   }
 
@@ -543,7 +544,7 @@ footer {
   // -----------------------
   // SECTION OUR CLIENTS
 
-  #our-clients > * {
+  #our-clients>* {
     width: 90%;
   }
 
