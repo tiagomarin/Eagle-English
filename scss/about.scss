@@ -54,7 +54,6 @@ main {
     }
 
     li {
-
       i,
       a {
         text-decoration: none;
@@ -113,7 +112,7 @@ main {
 }
 
 //  SECTION - INTRO
-#intro>* {
+#intro > * {
   width: 90%;
 }
 
@@ -128,11 +127,9 @@ main {
   h1 {
     font-size: 3.2rem;
     font-weight: 500;
-    // font-size: 6.8rem; desktop
     font-family: Cocogoose, sans-serif;
     text-transform: uppercase;
     line-height: 3.3rem;
-    background-clip: text;
     -webkit-background-clip: text;
     color: rgba(255, 0, 0, 0.6);
     background-image: url('../assets/background/text-background.png');
@@ -174,7 +171,7 @@ main {
 
 // -----------------------
 // SECTION ABOUT LOGO
-#logo-space>* {
+#logo-space > * {
   width: 90%;
 }
 
@@ -233,7 +230,7 @@ main {
 
 // -----------------------
 // SECTION TESTIMONIALS
-#testimonials>* {
+#testimonials > * {
   width: 90%;
 }
 
@@ -310,7 +307,7 @@ main {
 // -----------------------
 // SECTION OUR CLIENTS
 
-#our-clients>* {
+#our-clients > * {
   width: 90%;
 }
 
@@ -358,7 +355,7 @@ main {
 // -----------------------
 // FOOTER
 
-footer>* {
+footer > * {
   width: 90%;
 }
 
@@ -408,6 +405,11 @@ footer {
   // NAVIGATION BAR
   #pre-nav {
     background-color: var(--grey-dark);
+    justify-content: flex-end;
+    height: 2rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
 
     ul li a,
     ul li a i {
@@ -418,9 +420,21 @@ footer {
   #desktop-nav {
     background-color: white;
     min-height: 6rem;
+    justify-content: space-between;
+    position: fixed;
+    top: 2rem;
+    width: 100%;
 
     ul li a {
       color: inherit;
+    }
+
+    button {
+      background-color: white;
+      color: var(--orange);
+      border: 3px solid var(--orange);
+      font-size: inherit;
+      padding: 0.8rem 1.2rem;
     }
   }
 
@@ -442,6 +456,7 @@ footer {
       display: flex;
       gap: 2rem;
       list-style: none;
+      align-items: center;
 
       li a {
         text-decoration: none;
@@ -449,18 +464,9 @@ footer {
     }
   }
 
-  #pre-nav {
-    justify-content: flex-end;
-    height: 2rem;
-  }
-
-  #desktop-nav {
-    justify-content: space-between;
-  }
-
   // SECTION INTRO
 
-  #intro>* {
+  #intro > * {
     width: 70%;
   }
 
@@ -533,7 +539,7 @@ footer {
   // -----------------------
   // SECTION OUR CLIENTS
 
-  #our-clients>* {
+  #our-clients > * {
     width: 90%;
   }
 
@@ -588,7 +594,7 @@ footer {
     align-items: center;
     justify-content: left;
     gap: 5rem;
-    background-color: rgba(255, 255, 255, 0.90);
+    background-color: rgba(255, 255, 255, 0.9);
 
     img {
       width: 26%;
