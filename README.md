@@ -50,9 +50,9 @@ The requirements for this projects were:
 
 To get a local copy up and running follow these simple example steps:
 
-### Clone this repo to your computer using git.
+- Clone this repo to your computer using git.
 Or
-### Download the compressed [zip folder](https://github.com/Tiago-Lelinski-Marin/capstone-project-1/archive/refs/heads/main.zip) and use a decompressor to unzip it into your computer. Then open the folder and all the project files will be there.
+- Download the compressed [zip folder](https://github.com/Tiago-Lelinski-Marin/capstone-project-1/archive/refs/heads/main.zip) and use a decompressor to unzip it into your computer. Then open the folder and all the project files will be there.
 
 
 
