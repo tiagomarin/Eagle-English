@@ -58,7 +58,6 @@ main {
     }
 
     li {
-
       i,
       a {
         text-decoration: none;
@@ -112,7 +111,7 @@ main {
 }
 
 // SECTION INTRO
-#intro>* {
+#intro > * {
   width: 90%;
 }
 
@@ -126,11 +125,12 @@ main {
 
   h1 {
     font-size: 3.2rem;
-    font-weight: 500;
+    font-weight: bold;
     font-family: 'Cocogoose', sans-serif;
     text-transform: uppercase;
     line-height: 3.3rem;
     text-align: left;
+    // background-clip: text;
     -webkit-background-clip: text;
     color: rgba(255, 0, 0, 0.6);
     background-image: url('../assets/background/text-background.png');
@@ -140,7 +140,6 @@ main {
   h2 {
     color: var(--orange);
     font-size: 2rem;
-    // font-size: 4.2rem; desktop
     font-weight: 200;
     font-family: 'Lato', sans-serif;
   }
@@ -148,7 +147,6 @@ main {
   p {
     color: var(--grey-dark);
     font-size: 1.3rem;
-    // font-family: 'Lato', sans-serif;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
     line-height: 2.2rem;
@@ -160,7 +158,7 @@ main {
   h3 {
     color: var(--dark-grey);
     font-size: 2.4rem;
-    font-weight: 500;
+    font-weight: normal;
     font-family: 'Cocogoose', sans-serif;
     text-transform: uppercase;
   }
@@ -173,7 +171,7 @@ main {
 
 // -----------------------
 // SECTION COURSE FEATURES
-#course-features>* {
+#course-features > * {
   width: 90%;
 }
 
@@ -453,11 +451,13 @@ footer {
 
   // SECTION INTRO
 
-  #intro>* {
+  #intro > * {
     width: 70%;
   }
 
   #intro {
+    padding-top: 15rem;
+
     h2 {
       font-size: 3rem;
     }
@@ -475,7 +475,7 @@ footer {
   }
 
   // SECTION COURSE FEATURES
-  #course-features>* {
+  #course-features > * {
     width: 70%;
   }
 
@@ -516,7 +516,7 @@ footer {
     background-color: rgb(255, 255, 255, 0.9);
   }
 
-  #feat-teachers>* {
+  #feat-teachers > * {
     width: 70%;
   }
 
@@ -544,7 +544,7 @@ footer {
   // -----------------------
   // SECTION OUR CLIENTS
 
-  #our-clients>* {
+  #our-clients > * {
     width: 90%;
   }
 

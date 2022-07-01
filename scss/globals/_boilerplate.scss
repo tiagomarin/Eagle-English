@@ -5,50 +5,30 @@
 //Cocogoose
 @font-face {
   font-family: 'Cocogoose';
-  src: url('../fonts/CocogoosePro/CocogooseProUltraCompTrial-BoldItalic.woff') format('woff');
-  font-weight: bold;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Cocogoose';
-  src: url('../fonts/CocogoosePro/CocogooseProUltraCompTrial-ThinItalic.woff') format('woff');
-  font-weight: 100;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Cocogoose';
-  src: url('../fonts/CocogoosePro/CocogooseProUltraCompTrial-Italic.woff') format('woff');
-  font-weight: normal;
-  font-style: italic;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Cocogoose';
-  src: url('../fonts/CocogoosePro/CocogooseProUltraCompTrial-Regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Cocogoose';
-  src: url('../fonts/CocogoosePro/CocogooseProUltraCompTrial-Thin.woff') format('woff');
+  src: url('../fonts/CocogoosePro/CocogooseProTrial-Thin.woff') format('woff');
   font-weight: 100;
   font-style: normal;
-  font-display: swap;
+}
+
+@font-face {
+  font-family: 'CocogooseProTrial Semilight';
+  src: url('../fonts/CocogoosePro/CocogooseProTrial-Semilight.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
 }
 
 @font-face {
   font-family: 'Cocogoose';
-  src: url('../fonts/CocogoosePro/CocogooseProUltraCompTrial-Bold.woff') format('woff');
+  src: url('../fonts/CocogoosePro/CocogooseProTextTrial-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cocogoose';
+  src: url('../fonts/CocogoosePro/CocogooseProTextTrial-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
-  font-display: swap;
 }
 
 //Globals
@@ -66,8 +46,6 @@ html {
   -webkit-box-sizing: inherit;
   -moz-box-sizing: inherit;
   box-sizing: inherit;
-  // margin-block-start: 0;
-  // margin-block-end: 0;
   margin: 0;
   padding: 0;
 }

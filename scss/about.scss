@@ -54,7 +54,6 @@ main {
     }
 
     li {
-
       i,
       a {
         text-decoration: none;
@@ -113,7 +112,7 @@ main {
 }
 
 //  SECTION - INTRO
-#intro>* {
+#intro > * {
   width: 90%;
 }
 
@@ -127,10 +126,11 @@ main {
 
   h1 {
     font-size: 3.2rem;
-    font-weight: 500;
+    font-weight: bold;
     font-family: 'Cocogoose', sans-serif;
     text-transform: uppercase;
     line-height: 3.3rem;
+    // background-clip: text;
     -webkit-background-clip: text;
     color: rgba(255, 0, 0, 0.6);
     background-image: url('../assets/background/text-background.png');
@@ -172,7 +172,7 @@ main {
 
 // -----------------------
 // SECTION ABOUT LOGO
-#logo-space>* {
+#logo-space > * {
   width: 90%;
 }
 
@@ -231,7 +231,7 @@ main {
 
 // -----------------------
 // SECTION TESTIMONIALS
-#testimonials>* {
+#testimonials > * {
   width: 90%;
 }
 
@@ -308,7 +308,7 @@ main {
 // -----------------------
 // SECTION OUR CLIENTS
 
-#our-clients>* {
+#our-clients > * {
   width: 90%;
 }
 
@@ -356,7 +356,7 @@ main {
 // -----------------------
 // FOOTER
 
-footer>* {
+footer > * {
   width: 90%;
 }
 
@@ -467,11 +467,13 @@ footer {
 
   // SECTION INTRO
 
-  #intro>* {
+  #intro > * {
     width: 70%;
   }
 
   #intro {
+    padding-top: 15rem;
+
     h2 {
       font-size: 3rem;
     }
@@ -540,7 +542,7 @@ footer {
   // -----------------------
   // SECTION OUR CLIENTS
 
-  #our-clients>* {
+  #our-clients > * {
     width: 90%;
   }
 
