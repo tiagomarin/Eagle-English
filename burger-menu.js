@@ -30,7 +30,7 @@ clsModalBtn.addEventListener('click', () => {
 });
 // click outside of mobile menu -> back to "display none"
 window.addEventListener('click', (event) => {
-  if (event.target === mobMenuContainer || event.target === clsModalBtn) {
+  if (event.target === mobMenuContainer || event.target === clsModalBtn || event.target === menuItem) {
     clsModal(mobMenu);
   }
 });
