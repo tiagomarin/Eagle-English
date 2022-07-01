@@ -1,0 +1,609 @@
+@import 'globals';
+
+main {
+  background: url("../assets/background/background-mobile-bw.png") center fixed;
+}
+
+// HEADER
+// blur background outside menu modal
+.menu-on {
+  overflow: hidden;
+  background-color: rgb(0, 0, 0, 0.5);
+  backdrop-filter: blur(3px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.mobile-menu {
+  display: none;
+  width: 70%;
+  height: 100%;
+  overflow: hidden;
+  background: rgba(26, 26, 31, 0.85);
+  list-style: none;
+  font-size: 20px;
+  padding-top: 10rem;
+
+  li {
+    padding-left: 2.5rem;
+
+    i {
+      width: 4rem;
+    }
+  }
+}
+
+#logo-mob-menu {
+  margin-top: 8rem;
+
+  img {
+    width: 15rem;
+  }
+}
+
+#mobile-nav {
+  .mobile-menu {
+    .close-menu-btn i {
+      color: var(--grey-light);
+    }
+
+    li {
+      i,
+      a {
+        text-decoration: none;
+        color: var(--grey-light);
+      }
+    }
+  }
+}
+
+.menu-btn,
+.close-menu-btn {
+  display: flex;
+  background-color: transparent;
+  width: 100%;
+  border: 0;
+  font-size: 3rem;
+  line-height: 4rem;
+  position: fixed;
+  left: 0;
+  top: 0;
+
+  //centering open and close buttons:
+  i {
+    margin: 1.6rem 0 1.6rem 2.6rem;
+  }
+}
+
+.menu-btn.transparent {
+  background-color: transparent;
+}
+
+.menu-btn.colored {
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+.display-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.closeup {
+  font-size: 3.4rem;
+}
+
+.br-med {
+  display: block;
+  height: 2px;
+  margin-bottom: 2px;
+  background-color: var(--grey-light);
+}
+
+#pre-nav,
+#desktop-nav {
+  display: none;
+}
+
+//  SECTION - INTRO
+#intro > * {
+  width: 90%;
+}
+
+#intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 8rem 0 7.5rem;
+
+  h1 {
+    font-size: 3.2rem;
+    font-weight: bold;
+    font-family: 'Cocogoose', sans-serif;
+    text-transform: uppercase;
+    line-height: 3.3rem;
+    // background-clip: text;
+    -webkit-background-clip: text;
+    color: rgba(255, 0, 0, 0.6);
+    background-image: url('../assets/background/text-background.png');
+    padding-top: 1rem;
+  }
+
+  h2 {
+    color: var(--orange);
+    font-size: 2rem;
+    // font-size: 4.2rem; desktop
+    font-weight: 200;
+    font-family: 'Lato', sans-serif;
+  }
+
+  div {
+    p {
+      color: var(--grey-dark);
+      font-size: 1.3rem;
+      font-weight: 400;
+      line-height: 2.2rem;
+      background-color: white;
+      padding: 3% 4%;
+      border: 0.1rem solid var(--grey-light);
+      margin: 5.8rem 0;
+    }
+  }
+
+  span {
+    font-size: 1.2rem;
+    margin-top: 0.4rem;
+    width: 24rem;
+  }
+
+  a {
+    color: var(--grey-dark);
+    font-weight: bold;
+  }
+}
+
+// -----------------------
+// SECTION ABOUT LOGO
+#logo-space > * {
+  width: 90%;
+}
+
+#logo-space {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  padding: 3.6rem 0 4rem;
+
+  h2 {
+    color: var(--grey-dark);
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  span {
+    display: block;
+    height: 0.1em;
+    width: 4rem;
+    background-color: var(--orange);
+    border-radius: 1rem;
+    margin: 2rem 0;
+  }
+
+  p {
+    color: var(--grey-dark);
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.6rem;
+    background-color: white;
+    padding: 3% 0;
+    margin: 1.8rem 0;
+  }
+
+  div {
+    width: 90%;
+    aspect-ratio: 14 / 5;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 0.1rem solid var(--grey-light);
+
+    .logo-img {
+      border: none;
+      height: 60%;
+      margin-left: 2rem;
+      width: auto;
+      background-image: url('../assets/logo/dark-big.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+}
+
+// -----------------------
+// SECTION TESTIMONIALS
+#testimonials > * {
+  width: 90%;
+}
+
+#testimonials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding: 3.6rem 0 4rem;
+  background-color: rgba(255, 255, 255, 0.85);
+  gap: 1.4rem;
+
+  h2 {
+    color: var(--grey-dark);
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  span {
+    display: block;
+    height: 0.1em;
+    width: 4rem;
+    background-color: var(--orange);
+    border-radius: 1rem;
+  }
+
+  p {
+    color: var(--grey-dark);
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.6rem;
+    margin: 1rem 0 1.8rem;
+  }
+
+  div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.6rem;
+    aspect-ratio: 16 / 9;
+
+    h3 {
+      font-size: 2.2rem;
+      color: white;
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: white;
+      margin: 0;
+      padding: 0;
+      width: 70%;
+    }
+  }
+
+  .first {
+    width: 90%;
+    background-image: url('../assets/pictures/testemonial-1-small.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  .second {
+    width: 90%;
+    background-image: url('../assets/pictures/testemonial-2-small.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+}
+
+// -----------------------
+// SECTION OUR CLIENTS
+
+#our-clients > * {
+  width: 90%;
+}
+
+#our-clients {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background-color: var(--grey-dark);
+  padding: 3.6rem 0 4rem;
+
+  h3 {
+    color: var(--grey-light);
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  span {
+    display: block;
+    height: 0.1em;
+    width: 4rem;
+    background-color: var(--orange);
+    border-radius: 1rem;
+    margin: 1rem 0 4rem;
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+
+    li {
+      width: 10rem;
+
+      img {
+        filter: grayscale(1);
+        width: 100%;
+      }
+    }
+  }
+}
+
+// -----------------------
+// FOOTER
+
+footer > * {
+  width: 90%;
+}
+
+footer {
+  // width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 2.6rem 2rem;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgba(255, 255, 255, 0.96);
+
+  img {
+    width: 30%;
+  }
+
+  #footer-logo-light {
+    display: none;
+  }
+
+  div {
+    max-width: max-content;
+
+    span {
+      display: none;
+    }
+  }
+
+  a {
+    color: inherit;
+  }
+}
+
+@media screen and (min-width: 768px) {
+
+  // background image
+  main {
+    background: url("../assets/background/background-desktop-bw.png") center fixed;
+  }
+
+  // hide mobile nav bar
+  #mobile-nav {
+    display: none;
+  }
+
+  // NAVIGATION BAR
+  #pre-nav {
+    background-color: var(--grey-dark);
+    justify-content: flex-end;
+    height: 2rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    ul li a,
+    ul li a i {
+      color: var(--grey-light);
+    }
+  }
+
+  #desktop-nav {
+    background-color: white;
+    min-height: 6rem;
+    justify-content: space-between;
+    position: fixed;
+    top: 2rem;
+    width: 100%;
+
+    ul li a {
+      color: inherit;
+    }
+
+    button {
+      background-color: white;
+      color: var(--orange);
+      border: 3px solid var(--orange);
+      font-size: inherit;
+      padding: 0.8rem 1.2rem;
+    }
+  }
+
+  #pre-nav,
+  #desktop-nav {
+    display: flex;
+    align-items: center;
+    padding: 0 15%;
+
+    a {
+      justify-self: flex-start;
+
+      img {
+        height: 5rem;
+      }
+    }
+
+    ul {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+      align-items: center;
+
+      li a {
+        text-decoration: none;
+      }
+    }
+  }
+
+  // SECTION INTRO
+
+  #intro > * {
+    width: 70%;
+  }
+
+  #intro {
+    padding-top: 15rem;
+
+    h2 {
+      font-size: 3rem;
+    }
+
+    h1 {
+      font-size: 4.6rem;
+      line-height: 4.7rem;
+    }
+
+    p {
+      align-self: flex-start;
+      border: 0.1rem solid var(--grey-light);
+    }
+  }
+
+  // -----------------------
+  // SECTION LOGO SPACE
+  #logo-space {
+    p {
+      margin: 1rem 0 4rem;
+      padding: 0;
+      width: 65%;
+    }
+
+    div {
+      width: 40%;
+      aspect-ratio: 14 / 5;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+      .logo-img {
+        height: 60%;
+        margin-left: 2rem;
+        width: auto;
+        background-image: url('../assets/logo/dark-big.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+
+  // -----------------------
+  // SECTION TESTEMiNIALS
+  #testimonials {
+    .testemonial-grid {
+      flex-direction: row;
+      width: 70%;
+
+      .first {
+        width: 100%;
+      }
+
+      .second {
+        width: 100%;
+      }
+
+      div {
+        p {
+          width: 70%;
+        }
+      }
+    }
+  }
+
+  // -----------------------
+  // SECTION OUR CLIENTS
+
+  #our-clients {
+    display: none;
+  }
+
+  // -----------------------
+  // FOOTER
+
+  footer {
+    width: 100%;
+    display: flex;
+    padding: 2.6rem 15%;
+    align-items: center;
+    justify-content: left;
+    gap: 5rem;
+    background-color: var(--grey-dark);
+    color: var(--grey-light);
+
+    img {
+      width: 20%;
+    }
+
+    #footer-logo-dark {
+      display: none;
+    }
+
+    #footer-logo-light {
+      display: flex;
+    }
+
+    div {
+      p {
+        span {
+          display: inline;
+        }
+
+        a {
+          color: inherit;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 980px) {
+
+  // increase font size proportionally
+  html {
+    font-size: 80%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+
+  // increase font size proportionally
+  html {
+    font-size: 90%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+
+  // increase font size proportionally
+  html {
+    font-size: 100%;
+  }
+}

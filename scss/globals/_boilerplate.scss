@@ -1,0 +1,56 @@
+// FONTS
+// Lato
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+//Cocogoose
+@font-face {
+  font-family: 'Cocogoose';
+  src: url('../fonts/CocogoosePro/CocogooseProTrial-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CocogooseProTrial Semilight';
+  src: url('../fonts/CocogoosePro/CocogooseProTrial-Semilight.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cocogoose';
+  src: url('../fonts/CocogoosePro/CocogooseProTextTrial-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cocogoose';
+  src: url('../fonts/CocogoosePro/CocogooseProTextTrial-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+//Globals
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  font-family: Lato, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
