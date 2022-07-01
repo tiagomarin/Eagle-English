@@ -48,11 +48,11 @@ The requirements for this projects were:
 
 ## Getting Started
 
-To get a local copy up and running follow these simple example steps.
+To get a local copy up and running follow these simple example steps:
 
-### Clone this repo to your computer.
+### Clone this repo to your computer using git.
 Or
-### Download the compressed zip folder and use a decompressor to unzip it.
+### Download the compressed [zip folder](https://github.com/Tiago-Lelinski-Marin/capstone-project-1/archive/refs/heads/main.zip) and use a decompressor to unzip it into your computer. Then open the folder and all the project files will be there.
 
 
 
@@ -83,6 +83,7 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - Hat tip to anyone whose code was used
+- Special thanks to [Cindy Shin](https://www.behance.net/adagio07) the author of the original design,
 
 ## 📝 License
 
