@@ -1,7 +1,7 @@
 @import 'globals';
 
 main {
-  background: url("../assets/background/background-mobile.png") center fixed;
+  background: url("../assets/background/background-mobile-bw.png") center fixed;
 }
 
 // HEADER
@@ -370,7 +370,11 @@ footer {
   background-color: rgba(255, 255, 255, 0.96);
 
   img {
-    width: 40%;
+    width: 30%;
+  }
+
+  #footer-logo-light {
+    display: none;
   }
 
   div {
@@ -390,12 +394,7 @@ footer {
 
   // background image
   main {
-    background: url("../assets/background/background-desktop.png") center fixed;
-  }
-
-  // reduce font size proportionally
-  html {
-    font-size: 55%;
+    background: url("../assets/background/background-desktop-bw.png") center fixed;
   }
 
   // hide mobile nav bar
@@ -490,7 +489,7 @@ footer {
   }
 
   // -----------------------
-  // SECTION TESTEMiNIALS
+  // SECTION LOGO SPACE
   #logo-space {
     p {
       margin: 1rem 0 4rem;
@@ -542,49 +541,8 @@ footer {
   // -----------------------
   // SECTION OUR CLIENTS
 
-  #our-clients > * {
-    width: 90%;
-  }
-
   #our-clients {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    background-color: var(--grey-dark);
-    padding: 3.6rem 0 4rem;
-
-    h3 {
-      color: var(--grey-light);
-      font-size: 2rem;
-      text-align: center;
-    }
-
-    span {
-      display: block;
-      height: 0.1em;
-      width: 4rem;
-      background-color: var(--orange);
-      border-radius: 1rem;
-      margin: 1rem 0 4rem;
-    }
-
-    ul {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 1rem;
-
-      li {
-        width: 10rem;
-
-        img {
-          filter: grayscale(1);
-          width: 100%;
-        }
-      }
-    }
+    display: none;
   }
 
   // -----------------------
@@ -597,10 +555,19 @@ footer {
     align-items: center;
     justify-content: left;
     gap: 5rem;
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: var(--grey-dark);
+    color: var(--grey-light);
 
     img {
-      width: 26%;
+      width: 20%;
+    }
+
+    #footer-logo-dark {
+      display: none;
+    }
+
+    #footer-logo-light {
+      display: flex;
     }
 
     div {
@@ -614,5 +581,29 @@ footer {
         }
       }
     }
+  }
+}
+
+@media screen and (min-width: 980px) {
+
+  // increase font size proportionally
+  html {
+    font-size: 80%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+
+  // increase font size proportionally
+  html {
+    font-size: 90%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+
+  // increase font size proportionally
+  html {
+    font-size: 100%;
   }
 }
