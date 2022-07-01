@@ -14,7 +14,7 @@ const teachersDatabase = [
   {
     image: 'assets/pictures/1.png',
     name: 'Julia Stein',
-    highlight: '32, graduated in business, worked in multinational companies in different countries',
+    highlight: '32, worked in multinational companies in different countries',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quasi assumenda quod at quaerat quo dolorum. Nobis nihil, nulla ullam expedita.',
   },
   {
@@ -46,13 +46,13 @@ const teachersDatabase = [
     image: 'assets/pictures/6.png',
     name: 'Alejandro Rojas',
     highlight: '34, loves cultural diferencies and loves to talk. He also likes to watch sports',
-    description: 'Amet consectetur adipisicing elit. Dolore laborum, sunt quis eaque vitae omnis quod necessitatibus pariatur repellendus cum maiores? Debitis voluptatem eos assumenda tenetur cumque.',
+    description: 'Amet consectetur adipisicing elit. Dolore laborum, sunt quis eaque vitae omnis quod pariatur cum maiores? Debitis voluptatem eos assumenda tenetur cumque.',
   },
   {
     image: 'assets/pictures/7.png',
     name: 'John Williams',
     highlight: '44, loves hiking and enjoyng the nature. He has been to many places on earth',
-    description: 'Adipisicing elit. Veritatis quam pariatur, sequi cupiditate consequuntur, dolor voluptatem voluptas consequatur accusamus exercitationem, ex similique iste aperiam.',
+    description: 'Adipisicing elit. Veritatis quam pariatur, sequi cupiditate consequuntur, dolor voluptatem voluptas consequatur accusamus , ex similique iste aperiam.',
   },
   {
     image: 'assets/pictures/8.png',
@@ -64,13 +64,13 @@ const teachersDatabase = [
     image: 'assets/pictures/9.png',
     name: 'Arthur Thompson',
     highlight: '21 years old, he loves languages and speaks 6 of them. His favorite hobby is chess',
-    description: 'Saepe error, voluptatem ab similique aspernatur beatae, nisi facilis a nostrum veritatis ut, reiciendis obcaecati expedita et autem sapiente quo? Exercitationem quia voluptate cupiditate.',
+    description: 'Saepe error, voluptatem ab similique aspernatur beatae, nisi facilis a nostrum veritatis ut, reiciendis obcaecati et autem sapiente quo? Exercit quia voluptate cupiditate.',
   },
   {
     image: 'assets/pictures/10.png',
     name: 'Will Miller',
     highlight: '38, loves to talk about business and sports. He also likes video games',
-    description: 'Mollitia sit, quis perferendis, voluptatibus quibusdam asperiores veniam accusamus consectetur dignissimos consequatur sequi iusto aperiam assumenda obcaecati quas facere, aspernatur illum excepturi aut.',
+    description: 'Mollitia sit, quis perferendis, voluptatibus quibusdam asperiores veniam accusamus consequatur sequi iusto aperiam assumenda obcaecati quas facere, aspernatur illum excepturi aut.',
   },
   {
     image: 'assets/pictures/11.png',

@@ -300,10 +300,9 @@ main {
 
 .img-container {
   display: flex;
-  min-height: 10rem;
-  min-width: 10rem;
-  max-height: 10rem;
-  max-width: 10rem;
+  aspect-ratio: 1/1;
+  max-height: 12rem;
+  max-width: 12rem;
   align-items: flex-end;
   justify-content: end;
   background-image: url("../assets/design/img-back-transp.png");
@@ -370,16 +369,16 @@ footer {
   display: none;
 }
 
+// ----------------------
+// Desktop Responsiveness
+
 @media screen and (min-width: 768px) {
 
   // background image
   main {
     background: url("../assets/background/background-desktop.png") center fixed;
-  }
-
-  // reduce font size proportionally
-  html {
-    font-size: 55%;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   // hide mobile nav bar
@@ -427,7 +426,7 @@ footer {
   #desktop-nav {
     display: flex;
     align-items: center;
-    padding: 0 15%;
+    padding: 0 10%;
 
     a {
       justify-self: flex-start;
@@ -452,7 +451,7 @@ footer {
   // SECTION INTRO
 
   #intro > * {
-    width: 70%;
+    width: 80%;
   }
 
   #intro {
@@ -517,7 +516,7 @@ footer {
   }
 
   #feat-teachers > * {
-    width: 70%;
+    width: 80%;
   }
 
   #teachers-grid {
@@ -608,5 +607,41 @@ footer {
     a {
       color: inherit;
     }
+  }
+}
+
+@media screen and (min-width: 980px) {
+
+  // increase font size proportionally
+  html {
+    font-size: 80%;
+  }
+
+  #course-features li {
+    height: 18rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+
+  // increase font size proportionally
+  html {
+    font-size: 90%;
+  }
+
+  #course-features li {
+    height: 18rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+
+  // increase font size proportionally
+  html {
+    font-size: 100%;
+  }
+
+  #course-features li {
+    height: 18rem;
   }
 }

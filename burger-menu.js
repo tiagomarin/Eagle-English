@@ -5,6 +5,8 @@ const mobMenuContainer = document.querySelector('#mobMenuContainer');
 const seeMore = document.querySelector('#see-more');
 const moreMobile = document.querySelectorAll('.more-mobile');
 const seeMoreArr = Array.from(moreMobile);
+const menuItems = document.querySelectorAll('.menu-items');
+const menuItemsArr = Array.from(menuItems);
 
 // open modal reusable function
 function openModal(element) {
@@ -30,13 +32,19 @@ clsModalBtn.addEventListener('click', () => {
 });
 // click outside of mobile menu -> back to "display none"
 window.addEventListener('click', (event) => {
-  if (event.target === mobMenuContainer || event.target === clsModalBtn || event.target === menuItem) {
+  if (event.target === mobMenuContainer || event.target === clsModalBtn) {
     clsModal(mobMenu);
+  } else {
+    for (let i = 0; i < menuItemsArr.length; i += 1) {
+      if (event.target === menuItemsArr[i]) {
+        clsModal(mobMenu);
+      }
+    }
   }
 });
 
 // add a white transparent background to nav bar MOBILE
-window.onscroll = function () {
+window.onscroll = function mobNavTransparency() {
   if (document.body.scrollTop >= 300 || document.documentElement.scrollTop >= 300) {
     openMenuBtn.classList.add('colored');
     openMenuBtn.classList.remove('transparent');
@@ -51,4 +59,9 @@ seeMore.addEventListener('click', () => {
   seeMoreArr.forEach((child) => {
     child.classList.toggle('more-mobile');
   });
+  if (seeMore.innerHTML === 'more <i class="fa-solid fa-angle-down"></i>') {
+    seeMore.innerHTML = 'less <i class="fa-solid fa-angle-up"></i>';
+  } else {
+    seeMore.innerHTML = 'more <i class="fa-solid fa-angle-down"></i>';
+  }
 });
