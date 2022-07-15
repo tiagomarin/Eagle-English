@@ -43,7 +43,7 @@ The requirements for this projects were:
 
 ## Live Demo
 
-[Live Demo Link](https://tiago-lelinski-marin.github.io/capstone-project-1/)
+[Live Demo Link](https://tiago-lelinski-marin.github.io/Eagle-English/)
 
 
 ## Getting Started
