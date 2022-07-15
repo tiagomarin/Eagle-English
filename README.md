@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Capstone Project 1
+# Eagle English
 
 > This project was designed to test some of the abilities I learned in the first module of the Microverse program. I had to create a website from scratch following basic [design guidelines](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015). The abilities to be tested are: Use semantic HTML tags.
 - Apply best practices in HTML code.
