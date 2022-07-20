@@ -54,6 +54,7 @@ main {
     }
 
     li {
+
       i,
       a {
         text-decoration: none;
@@ -112,7 +113,7 @@ main {
 }
 
 //  SECTION - INTRO
-#intro > * {
+#intro>* {
   width: 90%;
 }
 
@@ -172,7 +173,7 @@ main {
 
 // -----------------------
 // SECTION ABOUT LOGO
-#logo-space > * {
+#logo-space>* {
   width: 90%;
 }
 
@@ -231,7 +232,7 @@ main {
 
 // -----------------------
 // SECTION TESTIMONIALS
-#testimonials > * {
+#testimonials>* {
   width: 90%;
 }
 
@@ -308,7 +309,7 @@ main {
 // -----------------------
 // SECTION OUR CLIENTS
 
-#our-clients > * {
+#our-clients>* {
   width: 90%;
 }
 
@@ -341,6 +342,7 @@ main {
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
+    list-style: none;
 
     li {
       width: 10rem;
@@ -356,7 +358,7 @@ main {
 // -----------------------
 // FOOTER
 
-footer > * {
+footer>* {
   width: 90%;
 }
 
@@ -466,7 +468,7 @@ footer {
 
   // SECTION INTRO
 
-  #intro > * {
+  #intro>* {
     width: 70%;
   }
 

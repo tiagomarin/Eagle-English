@@ -58,6 +58,7 @@ main {
     }
 
     li {
+
       i,
       a {
         text-decoration: none;
@@ -111,7 +112,7 @@ main {
 }
 
 // SECTION INTRO
-#intro > * {
+#intro>* {
   width: 90%;
 }
 
@@ -171,7 +172,7 @@ main {
 
 // -----------------------
 // SECTION COURSE FEATURES
-#course-features > * {
+#course-features>* {
   width: 90%;
 }
 
@@ -416,9 +417,16 @@ footer {
     button {
       background-color: white;
       color: var(--orange);
-      border: 3px solid var(--orange);
+      border: 0.3rem solid var(--orange);
       font-size: inherit;
       padding: 0.8rem 1.2rem;
+    }
+
+    button:hover {
+      background-color: var(--orange);
+      color: white;
+      font-weight: 600;
+      border: 0.135rem solid var(--orange);
     }
   }
 
@@ -450,7 +458,7 @@ footer {
 
   // SECTION INTRO
 
-  #intro > * {
+  #intro>* {
     width: 80%;
   }
 
@@ -474,7 +482,7 @@ footer {
   }
 
   // SECTION COURSE FEATURES
-  #course-features > * {
+  #course-features>* {
     width: 70%;
   }
 
@@ -483,10 +491,12 @@ footer {
 
     ul {
       flex-direction: row;
+      gap: 1.6rem;
 
       li {
         flex-direction: column;
         padding: 2%;
+        transition: transform 0.5s ease-out;
 
         div {
           width: auto;
@@ -499,6 +509,12 @@ footer {
         p {
           font-size: 1rem;
         }
+
+      }
+
+      li:hover {
+        transform: scale(1.2);
+        background-color: rgba(255, 255, 255, .08);
       }
     }
 
@@ -515,7 +531,7 @@ footer {
     background-color: rgb(255, 255, 255, 0.9);
   }
 
-  #feat-teachers > * {
+  #feat-teachers>* {
     width: 80%;
   }
 
@@ -543,7 +559,7 @@ footer {
   // -----------------------
   // SECTION OUR CLIENTS
 
-  #our-clients > * {
+  #our-clients>* {
     width: 90%;
   }
 
@@ -576,6 +592,7 @@ footer {
       flex-wrap: wrap;
       justify-content: center;
       gap: 1rem;
+      list-style: none;
 
       li {
         width: 10rem;
