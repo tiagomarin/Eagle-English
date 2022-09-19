@@ -2,7 +2,15 @@
 
 # Eagle English
 
-> This project was designed to test some of the abilities I learned in the first module of the Microverse program. I had to create a website from scratch following basic [design guidelines](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015). The abilities to be tested are: Use semantic HTML tags.
+This project is a prototype landing page for an English School where you can find some basic information about the course and a little about the teachers.
+
+This project was designed to test some of the abilities I learned in the first module of the Microverse program. I had to create a website from scratch following basic [design guidelines](https://www.behance.net/gallery/29845175/CC-Global-Summit-2015). 
+
+<br>
+<details>
+  <summary>The abilities to be tested:  </summary>
+  
+- Use semantic HTML tags.
 - Apply best practices in HTML code.
 - Use CSS selectors correctly.
 - Use CSS box model.
@@ -15,7 +23,12 @@
 - Use objects to store and access data.
 - Communicate technical concepts to other technical people.
 
-The requirements for this projects were:
+</details>
+
+<br>
+<details>
+  <summary>Requirements for this projects:  </summary>
+
 * Build only these 2 pages: The "home" page and the "about" page.
 
 * Each of these pages should have versions for 2 different screen sizes: mobile: up to 768px wide and desktop: 768px or wider.
@@ -33,18 +46,25 @@ The requirements for this projects were:
 *Dynamic page
   - The section "Featured speakers" should be created dynamically in JavaScript.
   - You should use a JavaScript variable with the data about the speakers and use it when the page loads to create the HTML for this section dynamically.
+</details>
+
+<br>
+<br>
 
 ## Built With
 
-- HTML
-- CSS
-- JavaScript
-
+<img alt="HTML Badge" src="https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white">
+<img alt="CSS Badge" src="https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white">
+<img alt="JavaScript Badge" src="https://img.shields.io/badge/javascript%20-%23323330.svg?&style=for-the-badge&logo=javascript&logoColor=%23F7DF1E">
 
 ## Live Demo
 
-[Live Demo Link](https://tiago-lelinski-marin.github.io/Eagle-English/)
+[Live Demo Link](https://tiagomarin.github.io/Eagle-English/)
 
+
+## Screenshots:
+
+<img src="assets/pictures/Thumbnail.png">
 
 ## Getting Started
 
@@ -52,19 +72,13 @@ To get a local copy up and running follow these simple example steps:
 
 - Clone this repo to your computer using git.
 Or
-- Download the compressed [zip folder](https://github.com/Tiago-Lelinski-Marin/capstone-project-1/archive/refs/heads/main.zip) and use a decompressor to unzip it into your computer. Then open the folder and all the project files will be there.
+- Download the compressed [zip folder](https://github.com/tiagomarin/Eagle-English/archive/refs/heads/main.zip) and use a decompressor to unzip it into your computer. Then open the folder and all the project files will be there.
 
 
 
 ## Authors
 
-👤 **Author1**
-
-- GitHub: [@githubhandle](https://github.com/Tiago-Lelinski-Marin)
-- Twitter: [@twitterhandle](https://twitter.com/LelinskiMarin)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/tiago-lelinski-marin/)
-
-👤 **Author2**
+👤 **Tiago Lelinski Marin**
 
 - GitHub: [Tiago-Lelinski-Marin](https://github.com/githubhandle)
 - Twitter: [@LelinskiMarin](https://twitter.com/twitterhandle)
@@ -74,7 +88,7 @@ Or
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Tiago-Lelinski-Marin/capstone-project-1/issues).
+Feel free to check the [issues page](https://github.com/tiagomarin/Eagle-English/issues).
 
 ## Show your support
 
